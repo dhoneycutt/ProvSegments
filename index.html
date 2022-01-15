@@ -1,18 +1,18 @@
 <!DOCTYPE>
 <html>
 <style>
-  div.tooltip { 
-    position: absolute;     
-    text-align: center; 
-    max-width: 500px;    
-    display:flex;  
-    flex-direction: column;       
-    padding: 2px;         
-    background: white; 
-    border: 3px solid navy;    
-    border-radius: 5px;     
-    pointer-events: none;  
-    text-align:left;   
+  div.tooltip {
+    position: absolute;
+    text-align: center;
+    max-width: 500px;
+    display:flex;
+    flex-direction: column;
+    padding: 2px;
+    background: white;
+    border: 3px solid navy;
+    border-radius: 5px;
+    pointer-events: none;
+    text-align:left;
 }
 
 .tooltipP{
@@ -49,7 +49,7 @@
 
 <div id="controls" style="position: fixed; top:0; width:10vw; background-color: white; border:3px solid navy; z-index:1;">
           <form id="controlForm">
-            <b>Dataset:</b><br> 
+            <b>Dataset:</b><br>
             1<input type="radio" name="dataset" value=1 checked onclick="loadData()">
             2<input type="radio" name="dataset" value=2 onclick="loadData()">
             3<input type="radio" name="dataset" value=3 onclick="loadData()"><br>
@@ -83,11 +83,11 @@
             <h1>Provenance Segment Visualization</h1>
             <h3>Data Processing</h3>
             <p>Data from provenance logs are segmented. Small segments are grouped into the preceeding segment. Only explicit user action types from the logs are regarded in summarizing each segment (searches, note taking, highlighting, and opening a document).</p>
-            
+
             <h3>Overview</h3>
             <p>Each segment is represented by a card with a unique segment number. A lightblue bar represents the timeline for the entire segment, with a dark blue block showing the relative start and end times for the segment. The length of this bar encodes the duration of the segment.<br>
             Below is a timeline of all actions in the segment to show actions in context to one another. <br>
-            A textual summary of important actions in the segment is provided. <br> 
+            A textual summary of important actions in the segment is provided. <br>
             Key information about searching, note taking, highlighting, and document opening is included. Bars showing the relative frequency of each action are shown for each segment. A "Total" activity bar shows how much of the total activity among all segments occurs in the individual segment.</p>
 
             <h3>Zoom/Filter</h3>
@@ -122,8 +122,8 @@
 
 
   <!-- D3.js -->
-  <script src="code/d3.js" charset="utf-8"></script>
-  <script src="code/chart.js"></script>
+  <script src="./code/d3.js" charset="utf-8"></script>
+  <script src="./code/chart.js"></script>
 </body>
-  
+
 </html>
